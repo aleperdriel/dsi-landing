@@ -5,7 +5,6 @@ function Footer() {
         <footer>
             <div>
                 <ul>
-                    <li className="logo-container"><a href="#"><img className="logo" src={logo} alt="Down syndrom international logo"></img></a></li>
                     <li><a href="#">Lorem Ipsu</a></li>
                     <li><a href="#">Lorem Ip</a></li>
                     <li><a href="#">Lorem Ips</a></li>

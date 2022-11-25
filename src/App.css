@@ -1,5 +1,9 @@
 :root {
   --navy-blue: #1E294C;
+  --orange: #ed6b3bff;
+  --red: #e73d29ff;
+  --beige: #eed1a8ff;
+  --turquoise: #038C99;
 }
 
 * {
@@ -10,6 +14,7 @@
 
 body, html, #root {
   height: 100%;
+  font-family: Futura PT;
 }
 
 #root {
@@ -22,6 +27,21 @@ a {
   color: inherit;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+.btn {
+  background-color: var(--navy-blue);
+  padding: 0.5em 2em;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+}
 header nav {
   background: var(--navy-blue);
   color: #fff;
@@ -45,6 +65,58 @@ header .logo-container {
   width: 100px;
 }
 
+/* ------------ QUIZ ---------------------------------------- */
+.quiz-block-bg {
+  background-image: url("assets/img/gradient-wave-bg.png");
+}
+.quiz-block {
+  width: 80%;
+  margin: auto;
+}
+.quiz-answers-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 100px;
+  width: 60%;
+  place-items: center;
+  padding: 4em 0;
+  margin: auto;
+}
+
+
+.quiz-btn-answer {
+  background-color: var(--navy-blue);
+  color: #fff;
+  width: 80%;
+  height: 50px;
+  border-radius: 25px;
+  padding: 14px;
+  position: relative;
+  text-align: left;
+  min-width: 180px;
+}
+
+.quiz-btn-answer span {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: var(--orange);
+  padding: 12px 0;
+  top: 0;
+}
+
+.quiz-btn-answer p {
+  margin-left: 60px;
+}
+
+.quiz-question {
+  text-align: center;
+}
+
+
 /* ------------ TIMELINE BLOCK ---------------------------------------- */
 .timeline-block {
   color: #fff;
@@ -67,9 +139,73 @@ header .logo-container {
   font-size: 5rem;
 }
 
+.timeline-block svg {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
 
+
+.timeline-block svg circle:hover{
+  /* transform: scale(4); */
+  fill: blue;
+  cursor: pointer;
+}
+
+.learn-more-block {
+  text-align: center;
+  margin: auto;
+  width: 45%;
+  padding: 5rem 0;
+}
+
+.learn-more-block p {
+  font-weight: 200;
+}
+
+
+.divider {
+  width: 150px;
+  border: none;
+  border-bottom: 2px solid var(--navy-blue);
+  margin: 50px auto;
+}
+
+
+/* ------------ LINE CAROUSEL --------------------------------- */
+
+.line-carousel-block {
+  width: 70%;
+}
+
+.line-carousel-block ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: linear-gradient(#ffffff, #ffffff) 0 calc(100% - 2px) no-repeat,
+  linear-gradient(90deg, #038c99 0%, #eed1a8 50%, #ed6b3b 100%);
+  padding: 6px;
+  box-sizing: border-box;
+  list-style: none;
+  position: relative;
+}
+.line-carousel-block ul:first-child {
+  position: absolute;
+  color: blue;
+  left: -50%;
+}
+.line-carousel-block ul li::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: -5px;
+  left: 10;
+}
 /* ------------ FOOTER ---------------------------------------- */
-/* footer div {
+footer div {
   background: var(--navy-blue);
   color: #fff;
 }
@@ -80,4 +216,4 @@ footer div ul {
   align-items: center;
   list-style: none;
   position: relative;
-} */
+}
