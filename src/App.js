@@ -1,20 +1,21 @@
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Timeline from './components/Timeline';
-import QuizFrame from './components/QuizFrame';
-import LearnMoreSection from './components/LearnMoreSection';
-import LineCarousel from './components/LineCarousel';
+import Home from './pages/Home';
+import Associations from './pages/Associations';
+import About from './pages/About';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <Timeline></Timeline>
-      <LearnMoreSection></LearnMoreSection>
-      <QuizFrame></QuizFrame>
-      {/* <LineCarousel></LineCarousel> */}
-      <Footer></Footer>
+      <div className="App">
+      <Routes>
+            <Route exact path='/' element={< Home />}></Route>
+            <Route exact path='/associations' element={< Associations />}></Route>
+            <Route exact path='/about' element={< About />}></Route>
+            {/* <Route exact path='/contact' element={< Contact />}></Route> */}
+      </Routes>
+      </div>
     </>
   );
 }

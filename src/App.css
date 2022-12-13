@@ -28,13 +28,17 @@ a {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 3rem;
   text-align: center;
+  font-weight: 600;
+  margin-top: 2.5rem;
 }
+
 .btn {
   background-color: var(--navy-blue);
   padding: 0.5em 2em;
@@ -42,6 +46,13 @@ h3 {
   color: #ffffff;
   font-weight: bold;
 }
+
+div[class$='section-constraint'] {
+  padding: 0 2em;
+  width: 80%;
+  margin: auto;
+}
+
 header nav {
   background: var(--navy-blue);
   color: #fff;
@@ -72,6 +83,7 @@ header .logo-container {
 .quiz-block {
   width: 80%;
   margin: auto;
+  padding: 10em;
 }
 .quiz-answers-block {
   display: grid;
@@ -82,7 +94,6 @@ header .logo-container {
   padding: 4em 0;
   margin: auto;
 }
-
 
 .quiz-btn-answer {
   background-color: var(--navy-blue);
@@ -116,7 +127,6 @@ header .logo-container {
   text-align: center;
 }
 
-
 /* ------------ TIMELINE BLOCK ---------------------------------------- */
 .timeline-block {
   color: #fff;
@@ -124,7 +134,7 @@ header .logo-container {
   flex-grow: 2;
   min-height: 80vh;
   position: relative;
-  z-index: -1
+  z-index: -1;
 }
 
 .timeline-block h1 {
@@ -145,7 +155,6 @@ header .logo-container {
   z-index: 100;
 }
 
-
 .timeline-block svg circle:hover{
   /* transform: scale(4); */
   fill: blue;
@@ -162,7 +171,6 @@ header .logo-container {
 .learn-more-block p {
   font-weight: 200;
 }
-
 
 .divider {
   width: 150px;
@@ -216,4 +224,151 @@ footer div ul {
   align-items: center;
   list-style: none;
   position: relative;
+}
+
+/* ---------------------- HERO-BLOCK ------------------------------------ */
+.hero-block {
+  background-size: cover;
+  height: 60vh;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  width: 100%;
+}
+
+/* --------------------- ASSOCIATIONS ---------------------------------- */
+#asso-block {
+  /* width: 100%;
+  height: 100%;
+  background-color: red; */
+  background: url('assets/img/hero-org-bg.png') 50% no-repeat;
+}
+
+#about-block {
+  background: url('assets/img/hero-about-bg.png') 50% no-repeat;
+}
+
+/* --------------------- ABOUT ---------------------------------- */
+.description {
+  font-weight: 200;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0.5em auto 2em auto;
+}
+
+.image-triple-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.image-triple-description {
+  display: flex;
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background-color: rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
+  transition: height 0.5s;
+}
+.image-triple:hover {
+  cursor:pointer;
+}
+.image-triple:hover .image-triple-description {
+  height: 100%;
+}
+
+.image-triple {
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+.about-section {
+  padding-bottom: 2.5rem;
+}
+
+.about-section .image-triple {
+  width: 30%;
+  height: 70vh;
+}
+.image-triple-description p {
+  margin: auto;
+  bottom: 0;
+}
+
+.about-section .image-triple-1 {
+  background-image: url('/src/assets/img/triple-illu-1.png');
+}
+
+.about-section .image-triple-2 {
+  background-image: url('/src/assets/img/triple-illu-2.png');
+}
+
+.about-section .image-triple-3 {
+  background-image: url('/src/assets/img/triple-illu-3.png');
+}
+
+.impact-block {
+  margin-top: 4em;
+  color: #fff;
+}
+
+.impact-block img {
+  width: 100%;
+  margin-bottom: -1px;
+}
+
+.impact-block {
+  display: flex;
+  flex-direction: column;
+}
+.impact-block-text {
+  margin-top: -1px;
+  margin: 0;
+  background: var(--navy-blue);
+}
+
+.impact-block-text h3 {
+  color: #fff;
+}
+
+.impact-block .image-triple-container {
+  margin: 5rem 0;
+}
+
+.impact-block .image-triple {
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  
+}
+
+.impact-block .image-triple-1 {
+  background: url('/src/assets/img/impact1.png');
+}
+
+.impact-block .image-triple-2 {
+  background: url('/src/assets/img/impact2.png');
+}
+
+.impact-block .image-triple-3 {
+  background: url('/src/assets/img/impact3.png');
+}
+
+
+.reports-section .image-triple-1 {
+  background-image: url('/src/assets/img/triple-illu-1.png');
+}
+
+.reports-section .image-triple-2 {
+  background-image: url('/src/assets/img/triple-illu-2.png');
+}
+
+.reports-section .image-triple-3 {
+  background-image: url('/src/assets/img/triple-illu-3.png');
 }

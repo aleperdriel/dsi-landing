@@ -1,15 +1,19 @@
 import logo from '../assets/img/dsi-logo.png';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function Header() {
     return(
         <header>
             <nav>
                 <ul>
-                    <li className="logo-container"><a href="#"><img className="logo" src={logo} alt="Down syndrom international logo"></img></a></li>
-                    <li><a href="#">Lorem Ipsu</a></li>
-                    <li><a href="#">Lorem Ip</a></li>
-                    <li><a href="#">Lorem Ips</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li className="logo-container">
+                        <Link to="/">
+                        <img className="logo" src={logo} alt="Down syndrome international logo"/></Link></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><Link to="/about">Learn More</Link></li>
+                    <li><Link to="/associations">Associations</Link></li>
                 </ul>
             </nav>
         
