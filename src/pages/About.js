@@ -98,27 +98,67 @@ function About() {
                         <div className="image-triple image-triple-1">
                             <div className="image-triple-description">
                                 <Link to="/" className="image-triple-description">
-                                    <p>What we stand for</p>
+                                    <p>Annual report 2021-2022</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="image-triple image-triple-2">
                             <Link to="/" className="image-triple-description">
-                                <p>Our approach</p>
+                                <p>Annual report 2010-2011</p>
                             </Link>
 
                         </div>
                         <div className="image-triple image-triple-3">
                             <div className="image-triple-description">
                                 <Link to="/" className="image-triple-description">
-                                    <p>Who we work with</p>
+                                    <p>Annual report 2019-2020</p>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="image-triple image-triple-4">
+                            <div className="image-triple-description">
+                                <Link to="/" className="image-triple-description">
+                                    <p>Annual report 2021-2022</p>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="image-triple image-triple-5">
+                            <Link to="/" className="image-triple-description">
+                                <p>Annual report 2010-2011</p>
+                            </Link>
+
+                        </div>
+                        <div className="image-triple image-triple-6">
+                            <div className="image-triple-description">
+                                <Link to="/" className="image-triple-description">
+                                    <p>Annual report 2019-2020</p>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="image-triple image-triple-7">
+                            <div className="image-triple-description">
+                                <Link to="/" className="image-triple-description">
+                                    <p>Annual report 2021-2022</p>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="image-triple image-triple-8">
+                            <Link to="/" className="image-triple-description">
+                                <p>Annual report 2010-2011</p>
+                            </Link>
+
+                        </div>
+                        <div className="image-triple image-triple-9">
+                            <div className="image-triple-description">
+                                <Link to="/" className="image-triple-description">
+                                    <p>Annual report 2019-2020</p>
                                 </Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            {/* <Footer/> */}
+            <Footer/>
 
         </>
         

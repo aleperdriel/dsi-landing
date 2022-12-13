@@ -36,7 +36,6 @@ h3 {
   font-size: 3rem;
   text-align: center;
   font-weight: 600;
-  margin-top: 2.5rem;
 }
 
 .btn {
@@ -261,6 +260,8 @@ footer div ul {
 .image-triple-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 6vh;
 }
 
 
@@ -289,8 +290,12 @@ footer div ul {
   position: relative;
 }
 
-.about-section {
-  padding-bottom: 2.5rem;
+.image-triple-container {
+  margin: 4rem 0;
+}
+
+.about-section, .reports-section, .impact- {
+  padding: 2.5rem 0;
 }
 
 .about-section .image-triple {
@@ -334,16 +339,9 @@ footer div ul {
   background: var(--navy-blue);
 }
 
-.impact-block-text h3 {
-  color: #fff;
-}
-
-.impact-block .image-triple-container {
-  margin: 5rem 0;
-}
-
-.impact-block .image-triple {
+.impact-block .image-triple, .reports-section .image-triple {
   width: 30%;
+  min-width: 200px;
   aspect-ratio: 1 / 1;
   
 }
@@ -360,6 +358,12 @@ footer div ul {
   background: url('/src/assets/img/impact3.png');
 }
 
+/* ------------- ANNUAL REPORTS ------------------------------------ */
+.reports-section {
+  background: var(--navy-blue);
+  color: #fff;
+}
+
 
 .reports-section .image-triple-1 {
   background-image: url('/src/assets/img/triple-illu-1.png');
@@ -372,3 +376,28 @@ footer div ul {
 .reports-section .image-triple-3 {
   background-image: url('/src/assets/img/triple-illu-3.png');
 }
+
+.reports-section .image-triple-4 {
+  background-image: url('/src/assets/img/triple-illu-1.png');
+}
+
+.reports-section .image-triple-5 {
+  background-image: url('/src/assets/img/triple-illu-2.png');
+}
+
+.reports-section .image-triple-6 {
+  background-image: url('/src/assets/img/triple-illu-3.png');
+}
+
+.reports-section .image-triple-7 {
+  background-image: url('/src/assets/img/triple-illu-1.png');
+}
+
+.reports-section .image-triple-8 {
+  background-image: url('/src/assets/img/triple-illu-2.png');
+}
+
+.reports-section .image-triple-9 {
+  background-image: url('/src/assets/img/triple-illu-3.png');
+}
+
