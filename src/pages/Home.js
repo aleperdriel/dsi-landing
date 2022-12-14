@@ -11,8 +11,8 @@ const Home = () => {
         <Header></Header>
         <Timeline></Timeline>
         <LearnMoreSection></LearnMoreSection>
-        {/* <QuizFrame></QuizFrame> */}
-        {/* <LineCarousel></LineCarousel> */}
+        <QuizFrame></QuizFrame>
+        <LineCarousel></LineCarousel>
         <Footer></Footer>
     </>
     )
