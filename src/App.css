@@ -4,6 +4,7 @@
   --red: #e73d29ff;
   --beige: #eed1a8ff;
   --turquoise: #038C99;
+  --light-grey: #ACACAC;
 }
 
 * {
@@ -34,7 +35,6 @@ h2 {
 
 h3 {
   font-size: 3rem;
-  text-align: center;
   font-weight: 600;
 }
 
@@ -50,10 +50,16 @@ h3 {
 .intro-quiz-block .btn {
   background-color: var(--beige);
   color: #000;
-
 }
 
-div[class$='section-constraint'] {
+.donation-block .btn {
+  background-color: var(--turquoise);
+  border: none;
+  width: 200px;
+}
+
+
+div[class$='section-constraint'], section[class$='section-constraint'] {
   padding: 0 2em;
   width: 80%;
   margin: auto;
@@ -252,6 +258,7 @@ footer {
   width: 90%;
   border-bottom: 1px solid grey;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: right;
   padding: 2em 0;
@@ -274,6 +281,7 @@ footer ul {
 }
 
 .footer-lower {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -328,6 +336,12 @@ footer .socials-container li{
   background: url('assets/img/hero-about-bg.png') 50% no-repeat;
 }
 
+#donation-block {
+  background: url('assets/img/hero-donate-bg.webp') 50% no-repeat;
+}
+
+
+
 /* --------------------- ABOUT ---------------------------------- */
 .description {
   font-weight: 200;
@@ -374,7 +388,7 @@ footer .socials-container li{
   margin: 4rem 0;
 }
 
-.about-section, .reports-section, .intro-quiz-block{
+.about-section, .reports-section, .intro-quiz-block, .donation-section, .news-section{
   padding: 2.5rem 0;
 }
 
@@ -480,7 +494,89 @@ footer .socials-container li{
   background-image: url('/src/assets/img/triple-illu-3.png');
 }
 
+/* -------------- DONATION -------------------------------------- */
+.donation-section article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.donation-section article img {
+  width: 50%;
+}
+
+.donation-section article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.donation-section .article-description {
+  width: 50%;
+}
+
+.donation-section .article-description h3, .donation-section .article-description p{
+  text-align: left;
+}
+
+.donation-btn-container {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 2em auto;
+  flex-wrap: wrap;
+}
+
+
+.donation-btn-container .donation-btn{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  line-height: 90px;
+  background-color: var(--orange);
+}
+
+
+.donation-block {
+  background-color: var(--navy-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  color: #fff;
+}
+
+.donation-block header {
+  background-color: var(--turquoise);
+  border-radius: 2px;
+  padding: 0.5em 2em;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.donation-block input, .donation-block select {
+  display: block;
+  width: 100%;
+  padding: 0.75em;
+  background-color: transparent;
+  border: 1px solid rgb(211, 211, 211);
+  font-size: 1.125rem;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.donation-block form > *:not(.donation-btn-container) {
+  margin: 1em 0;
+}
+.donation-block input::placeholder, .donation-block select{
+  color: #fff;
+}
+
+.donation-block select option {
+  background-color: var(--navy-blue);
+}
+
+.donation-block .inline-form-row {
+  display: flex;
+  gap: 2em;
+}
 /* -------------- ARTICLE DETAIL -------------------------------- */
 .article-block {
   width: 60%;
@@ -511,4 +607,84 @@ footer .socials-container li{
 
 .article-block .article-content-text {
   margin: 2em 0;
+}
+
+.login {
+  margin-top: 5em;
+}
+
+/* -------------- NEWS -------------------------------- */
+
+.news-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 5em auto 0 auto;
+}
+
+.highlight-text {
+  text-align: left;
+  width: 50%;
+}
+
+.news-highlight img{
+  width: 40%;
+  min-width: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.news-category-section {
+  width: 90%;
+  margin: 4em auto;
+}
+
+.news-page hr {
+  width: 300px;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.article-description {
+  font-weight: 200;
+  color: var(--light-grey);
+  margin: 2.5em 0;
+}
+
+.article-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.news-category-section .category-description {
+  margin: 1.5em 0 3em 0;
+}
+
+.article-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.75em 0;
+}
+.article-item {
+  width: 30%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-item img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.news-category-section p:not(.article-title) {
+  font-weight: 300;
+  color: var(--light-grey);
 }

@@ -10,7 +10,9 @@ function About() {
         <>
             <Header/>
             <div id="about-block" className="hero-block">
-                <h2>About Us</h2>
+                <HeroBlock>
+                        <h2>About us</h2>
+                </HeroBlock>
             </div>
             {/* ABOUT SECTION */}
 

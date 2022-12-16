@@ -9,9 +9,9 @@ function Header() {
                     <li className="logo-container">
                         <Link to="/">
                         <img className="logo" src={logo} alt="Down syndrome international logo"/></Link></li>
-                    <li><a href="#">Quiz</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Donate</a></li>
+                    <li><Link to="/">Quiz</Link></li>
+                    <li><Link to="/news">News</Link></li>
+                    <li><Link to="/donate">Donate</Link></li>
                     <li><Link to="/about">Learn More</Link></li>
                     <li><Link to="/associations">Associations</Link></li>
                 </ul>
