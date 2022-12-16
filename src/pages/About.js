@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import WaveImg from '../assets/img/wave.png';
+import WaveImg from '../assets/img/wave.svg';
 
 import HeroBlock from '../components/HeroBlock';
 import Footer from '../components/Footer';
@@ -97,60 +97,60 @@ function About() {
                     <h3>Annual Reports</h3>
                     <p className='description'>Each year we publish a comprehensive annual report, looking at our progress against our aims and objectives and including financial statements, with income and expenditure for the year. Our financial year runs from April-March.</p>
                     <div className="image-triple-container">
-                        <div className="image-triple image-triple-1">
+                        <div className="image-triple image-report-1">
                             <div className="image-triple-description">
                                 <Link to="/article" className="image-triple-description">
                                     <p>Annual report 2021-2022</p>
                                 </Link>
                             </div>
                         </div>
-                        <div className="image-triple image-triple-2">
+                        <div className="image-triple image-report-2">
                             <Link to="/article" className="image-triple-description">
                                 <p>Annual report 2010-2011</p>
                             </Link>
 
                         </div>
-                        <div className="image-triple image-triple-3">
+                        <div className="image-triple image-report-3">
                             <div className="image-triple-description">
                                 <Link to="/article" className="image-triple-description">
                                     <p>Annual report 2019-2020</p>
                                 </Link>
                             </div>
                         </div>
-                        <div className="image-triple image-triple-4">
+                        <div className="image-triple image-report-4">
                             <div className="image-triple-description">
                                 <Link to="/article" className="image-triple-description">
                                     <p>Annual report 2021-2022</p>
                                 </Link>
                             </div>
                         </div>
-                        <div className="image-triple image-triple-5">
+                        <div className="image-triple image-report-5">
                             <Link to="/article" className="image-triple-description">
                                 <p>Annual report 2010-2011</p>
                             </Link>
 
                         </div>
-                        <div className="image-triple image-triple-6">
+                        <div className="image-triple image-report-6">
                             <div className="image-triple-description">
                                 <Link to="/article" className="image-triple-description">
                                     <p>Annual report 2019-2020</p>
                                 </Link>
                             </div>
                         </div>
-                        <div className="image-triple image-triple-7">
+                        <div className="image-triple image-report-7">
                             <div className="image-triple-description">
                                 <Link to="/article" className="image-triple-description">
                                     <p>Annual report 2021-2022</p>
                                 </Link>
                             </div>
                         </div>
-                        <div className="image-triple image-triple-8">
+                        <div className="image-triple image-report-8">
                             <Link to="/article" className="image-triple-description">
                                 <p>Annual report 2010-2011</p>
                             </Link>
 
                         </div>
-                        <div className="image-triple image-triple-9">
+                        <div className="image-triple image-report-9">
                             <div className="image-triple-description">
                                 <Link to="/article" className="image-triple-description">
                                     <p>Annual report 2019-2020</p>

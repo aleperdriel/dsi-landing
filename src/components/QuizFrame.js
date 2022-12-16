@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import QuizButton from "./QuizButton";
-import WaveImg from '../assets/img/wave.png';
+import WaveImg from '../assets/img/wave.svg';
 import SocksImg from '../assets/img/socks_home.png';
 import { Link } from 'react-router-dom';
 

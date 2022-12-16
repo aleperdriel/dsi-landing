@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import WaveImg from '../assets/img/wave.png';
+import WaveImg from '../assets/img/wave.svg';
 import Donation1Img from '../assets/img/don2.webp';
 import Donation2Img from '../assets/img/don3.webp';
 import DonationForm from '../components/DonationForm';

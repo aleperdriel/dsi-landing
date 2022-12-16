@@ -18,11 +18,6 @@ body, html, #root {
   font-family: Futura PT;
 }
 
-#root {
-  /* display: flex;
-  flex-direction: column; */
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -219,34 +214,76 @@ header .logo-container {
 /* ------------ LINE CAROUSEL --------------------------------- */
 
 .line-carousel-block {
-  width: 70%;
+  text-align: center;
 }
 
 .line-carousel-block ul {
+  width: 60%;
+  margin: 5em auto;
   display: flex;
   justify-content: space-around;
-  width: 100%;
   padding: 6px;
   box-sizing: border-box;
   list-style: none;
   position: relative;
+  border-bottom: 2px solid var(--orange);
 }
-.line-carousel-block ul:first-child {
-  position: absolute;
-  color: blue;
-  left: -50%;
+
+.line-carousel-block ul li {
+  color: var(--light-grey);
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+}
+.line-carousel-block li:first-child {
+  margin-left: -25%;
+}
+
+.line-carousel-block li:last-child {
+  margin-right: -25%;
 }
 .line-carousel-block ul li::after {
   content: '';
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  border: 1px solid #000;
   position: absolute;
-  bottom: -5px;
-  left: 10;
+  bottom: -22px;
+  left: 50%;
+  transform: translatex(-50%);
+  background-color: var(--orange);
 }
-/* ------------ FOOTER ---------------------------------------- */
+
+.line-carousel-block li.active {
+  color:#000;
+}
+
+.line-carousel-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 5em auto 0 auto;
+  padding: 3em 0 5em;
+}
+
+.line-carousel-content img {
+  width: 30%;
+  min-width: 200px;
+  border-radius: 15px;
+}
+
+.line-carousel-text {
+  width: 60%;
+}
+
+.line-carousel-text p {
+  color: var(--light-grey);
+  font-weight: 300;
+  margin: 3em 0;
+}
+  /* ------------ FOOTER ---------------------------------------- */
 
 footer {
   background: var(--navy-blue);
@@ -433,22 +470,23 @@ footer .socials-container li{
   background: var(--navy-blue);
 }
 
-.impact-block .image-triple, .reports-section .image-triple {
+.image-triple {
   width: 30%;
   min-width: 200px;
   aspect-ratio: 1 / 1;
+  background-position: center;
 }
 
 .impact-block .image-triple-1 {
-  background: url('/src/assets/img/impact1.png');
+  background-image: url('/src/assets/img/about/Impact1.jpg');
 }
 
 .impact-block .image-triple-2 {
-  background: url('/src/assets/img/impact2.png');
+  background-image: url('/src/assets/img/about/ImpactANDreport2.jpg');
 }
 
 .impact-block .image-triple-3 {
-  background: url('/src/assets/img/impact3.png');
+  background-image: url('/src/assets/img/about/Impact3.jpg');
 }
 
 /* ------------- ANNUAL REPORTS ------------------------------------ */
@@ -459,39 +497,55 @@ footer .socials-container li{
 
 
 .reports-section .image-triple-1 {
-  background-image: url('/src/assets/img/triple-illu-1.png');
+  background-image: url('/src/assets/img/about/Whatwestandfor.jpg');
 }
 
 .reports-section .image-triple-2 {
-  background-image: url('/src/assets/img/triple-illu-2.png');
+  background-image: url('/src/assets/img/about/Approach.jpg');
 }
 
-.reports-section .image-triple-3 {
-  background-image: url('/src/assets/img/triple-illu-3.png');
+.reports-section .image-triple-3, .reports-section .image-report-2 {
+  background-image: url('/src/assets/img/about/WhoWeWorkWith.jpg');
 }
 
 .reports-section .image-triple-4 {
-  background-image: url('/src/assets/img/triple-illu-1.png');
+  background-image: url('/src/assets/img/about/Impact1.jpg');
 }
 
 .reports-section .image-triple-5 {
-  background-image: url('/src/assets/img/triple-illu-2.png');
+  background-image: url('/src/assets/img/about/ImpactANDreport2.jpg');
 }
 
 .reports-section .image-triple-6 {
-  background-image: url('/src/assets/img/triple-illu-3.png');
+  background-image: url('/src/assets/img/about/Impact3.jpg');
 }
 
-.reports-section .image-triple-7 {
-  background-image: url('/src/assets/img/triple-illu-1.png');
+.reports-section .image-report-1 {
+  background-image: url('/src/assets/img/about/Annual_Report1.jpg');
 }
 
-.reports-section .image-triple-8 {
-  background-image: url('/src/assets/img/triple-illu-2.png');
+.reports-section .image-report-3 {
+  background-image: url('/src/assets/img/about/Annual_Report3.jpg');
 }
 
-.reports-section .image-triple-9 {
-  background-image: url('/src/assets/img/triple-illu-3.png');
+.reports-section .image-report-4 {
+  background-image: url('/src/assets/img/about/Annual_Report4.jpg');
+}
+
+.reports-section .image-report-5 {
+  background-image: url('/src/assets/img/about/Annual_Report5.jpg');
+}
+.reports-section .image-report-6 {
+  background-image: url('/src/assets/img/about/Annual_Report6.jpg');
+}
+.reports-section .image-report-7 {
+  background-image: url('/src/assets/img/about/Annual_Report7.jpg');
+}
+.reports-section .image-report-8 {
+  background-image: url('/src/assets/img/about/Annual_Report8.jpg');
+}
+.reports-section .image-report-9 {
+  background-image: url('/src/assets/img/about/Annual_Report9.jpg');
 }
 
 /* -------------- DONATION -------------------------------------- */
@@ -682,6 +736,7 @@ footer .socials-container li{
   object-fit: cover;
   height: 300px;
   width: 100%;
+  border-radius: 15px;
 }
 
 .news-category-section p:not(.article-title) {
