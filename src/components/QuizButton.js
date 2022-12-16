@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-function QuizButton({text, questionPosition}) {
+function QuizButton({text, questionPosition, onClick}) {
 
     return(
-        <div className="quiz-btn-answer">
+        <div onClick={() => onClick(questionPosition)} className="quiz-btn-answer">
             <span>{ questionPosition }</span><p>{ text }</p>
         </div>
     )
