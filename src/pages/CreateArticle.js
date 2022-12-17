@@ -31,6 +31,7 @@ function CreateArticle() {
     }
 
     const [title, setTitle] = useState("");
+    const [imgUrl, setImgUrl] = useState("");
     const [content, setContent] = useState("");
 
     const articleCollRef = collection(db, "articles");
@@ -38,8 +39,10 @@ function CreateArticle() {
     async function createArticle() {
         await addDoc(articleCollRef, {
             title,
-            content
+            content,
+            imgUrl
         })
+        navigate('/news')
     }
     return(
         <>
@@ -52,8 +55,9 @@ function CreateArticle() {
                 Logout
                 </button>
             </div>
-            <div><h3>Create a new article</h3>
+            <div className="create-article-container"><h3>Create a new article</h3>
                 <input placeholder="Article title" onChange={(e) => setTitle(e.target.value)}></input>
+                <input placeholder="Article image url" onChange={(e) => setImgUrl(e.target.value)}></input>
                 <textarea placeholder="Write your article here" onChange={(e) => setContent(e.target.value)}></textarea>
                 <button onClick={createArticle} className="btn">Post the article</button>
             </div>

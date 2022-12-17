@@ -22,7 +22,7 @@ function App() {
             <Route exact path='/donate' element={< Donation />}></Route>
             <Route exact path='/about' element={< About />}></Route>
             <Route exact path='/news' element={< News />}></Route>
-            <Route exact path='/article' element={< Article />}></Route>
+            <Route exact path='/article/:slug' element={< Article />}></Route>
             {/* <Route exact path='/contact' element={< Contact />}></Route> */}
       </Routes>
       </div>

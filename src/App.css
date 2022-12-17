@@ -443,8 +443,6 @@ footer .socials-container li{
   background: url('assets/img/hero-donate-bg.webp') 50% no-repeat;
 }
 
-
-
 /* --------------------- ABOUT ---------------------------------- */
 .description {
   font-weight: 200;
@@ -561,7 +559,6 @@ footer .socials-container li{
   color: #fff;
 }
 
-
 .reports-section .image-triple-1 {
   background-image: url('/src/assets/img/about/Whatwestandfor.jpg');
 }
@@ -619,23 +616,37 @@ footer .socials-container li{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 4em 0;
 }
 
+.donation-section article h3 {
+  color: #000;
+  margin: auto;
+}
 .donation-section article img {
   width: 50%;
+  object-fit: cover;
 }
+
 
 .donation-section article:nth-child(even) {
   flex-direction: row-reverse;
 }
 
 .donation-section .article-description {
+  height: 100%;
   width: 50%;
+  padding: 2em;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .donation-section .article-description h3, .donation-section .article-description p{
   text-align: left;
 }
+
 
 .donation-btn-container {
   display: flex;
@@ -702,12 +713,13 @@ footer .socials-container li{
   width: 60%;
   margin: auto;
   min-height: 80vh;
+  height: 100%;
 }
 
 .article-block img {
   margin: 4em 0;
   width: 100%;
-  height: 40%;
+  height: 30%;
   object-fit: cover;
 }
 .article-block .article-content {
@@ -727,10 +739,6 @@ footer .socials-container li{
 
 .article-block .article-content-text {
   margin: 2em 0;
-}
-
-.login {
-  margin-top: 5em;
 }
 
 /* -------------- NEWS -------------------------------- */
@@ -768,7 +776,7 @@ footer .socials-container li{
   border-bottom: 1px solid var(--light-grey);
 }
 
-.article-description {
+.news-category-section .article-description {
   font-weight: 200;
   color: var(--light-grey);
   margin: 2.5em 0;
@@ -779,6 +787,7 @@ footer .socials-container li{
   justify-content: space-evenly;
   flex-wrap: wrap;
   list-style: none;
+  row-gap: 3em;
 }
 
 .news-category-section .category-description {
@@ -789,6 +798,10 @@ footer .socials-container li{
   font-size: 2rem;
   font-weight: 600;
   margin: 0.75em 0;
+}
+
+.news-category-section .article-title:hover {
+  text-decoration: underline;
 }
 .article-item {
   width: 30%;
@@ -808,4 +821,35 @@ footer .socials-container li{
 .news-category-section p:not(.article-title) {
   font-weight: 300;
   color: var(--light-grey);
+}
+
+/* -------------- BACK OFFICE -------------------------------- */
+
+.login {
+  min-height: 90vh;
+  min-width: 300px;
+  width: 30%;
+  margin:5em auto;
+}
+
+.login-container, .create-article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.login input, .create-article-container input {
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+  padding: 0.5em;
+}
+
+/* -------------- CREATE ARTICLE -------------------------------- */
+.create-article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  min-width: 300px;
+  width: 30%;
+  margin:5em auto;
 }

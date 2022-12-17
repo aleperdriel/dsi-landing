@@ -85,7 +85,8 @@ function About() {
             <section className="history-section">
                 <div className='section-constraint'>
                     <h3>Our history</h3>
-                    <p className='description'>We are a UK based international disabled people's organisation, comprising a membership of individuals and organisations from all over the world, committed to improving quality of life for people with Down syndrome, promoting their right to be included on a full and equal basis with others.</p>
+                    <p className='description'>DSI was founded as a result of a meeting between Jo Mills Penny Robertson and Sylvia Escamilla who formalised the mission and structure of the organisation, in 1993.</p>
+                    <p className='description'>In 2019 we organized our 8th WDSD Conference (World Down Syndrome Day)</p>
                 </div>
             </section>
             {/* END HISTORY SECTION */}
@@ -106,7 +107,7 @@ function About() {
                         </div>
                         <div className="image-triple image-report-2">
                             <Link to="/article" className="image-triple-description">
-                                <p>Annual report 2010-2011</p>
+                                <p>Annual report 2020-2021</p>
                             </Link>
 
                         </div>
@@ -120,40 +121,40 @@ function About() {
                         <div className="image-triple image-report-4">
                             <div className="image-triple-description">
                                 <Link to="/article" className="image-triple-description">
-                                    <p>Annual report 2021-2022</p>
+                                    <p>Annual report 2018-2019</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="image-triple image-report-5">
                             <Link to="/article" className="image-triple-description">
-                                <p>Annual report 2010-2011</p>
+                                <p>Annual report 2017-2018</p>
                             </Link>
 
                         </div>
                         <div className="image-triple image-report-6">
                             <div className="image-triple-description">
                                 <Link to="/article" className="image-triple-description">
-                                    <p>Annual report 2019-2020</p>
+                                    <p>Annual report 2016-2017</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="image-triple image-report-7">
                             <div className="image-triple-description">
                                 <Link to="/article" className="image-triple-description">
-                                    <p>Annual report 2021-2022</p>
+                                    <p>Annual report 2014-2015</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="image-triple image-report-8">
                             <Link to="/article" className="image-triple-description">
-                                <p>Annual report 2010-2011</p>
+                                <p>Annual report 2013-2014</p>
                             </Link>
 
                         </div>
                         <div className="image-triple image-report-9">
                             <div className="image-triple-description">
                                 <Link to="/article" className="image-triple-description">
-                                    <p>Annual report 2019-2020</p>
+                                    <p>Annual report 2012-2013</p>
                                 </Link>
                             </div>
                         </div>

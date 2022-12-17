@@ -23,14 +23,14 @@ function Donation() {
                         <img src={Donation1Img} alt="child smiling"></img>
                         <div className="article-description">
                             <h3>Improve lives with your support</h3>
-                            <p className='description'>We are a UK based international disabled people's organisation, comprising a membership of individuals and organisations from all over the world, committed to improving quality of life for people with Down syndrome, promoting their right to be included on a full and equal basis with others.</p>
+                            <p>We are a UK based international disabled people's organisation, comprising a membership of individuals and organisations from all over the world, committed to improving quality of life for people with Down syndrome, promoting their right to be included on a full and equal basis with others.</p>
                         </div>
                     </article>
                     <article>
                         <img src={Donation2Img} alt="child smiling"></img>
                         <div className='article-description'>
                             <h3>Your contribution</h3>
-                            <p className='description'>We are a UK based international disabled people's organisation, comprising a membership of individuals and organisations from all over the world, committed to improving quality of life for people with Down syndrome, promoting their right to be included on a full and equal basis with others.</p>
+                            <p>We are a UK based international disabled people's organisation, comprising a membership of individuals and organisations from all over the world, committed to improving quality of life for people with Down syndrome, promoting their right to be included on a full and equal basis with others.</p>
                         </div>
                     </article>
                 </div>

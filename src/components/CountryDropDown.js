@@ -2,8 +2,7 @@ import React from 'react'
 
 export default function CountryDropDown() {
   return (
-        <select id="country" name="country" class="form-control" placeholder='Country'>
-            <option value="default" selected>Choose a country</option>
+        <select id="country" name="country" placeholder='Country' defaultValue="Ireland">
             <option value="Afghanistan">Afghanistan</option>
             <option value="Åland Islands">Åland Islands</option>
             <option value="Albania">Albania</option>

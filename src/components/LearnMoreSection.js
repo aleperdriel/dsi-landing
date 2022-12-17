@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 function LearnMoreSection() {
     return(
         <div className="learn-more-block">
             <h2>Down Syndrome International</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit et aperiam, iste itaque animi autem, voluptatibus, quam facilis reprehenderit dolore ipsum id soluta minus corporis. Tempore similique aliquam doloribus commodi.</p>
+            <p>We are an international disabled people's organisation, committed to improving quality of life for people with Down syndrome, promoting their right to be included on a full and equal basis with others.</p>
             <hr className="divider"></hr>
-            <a href="#" className="btn">Discover more about us</a>
+            <Link to='/about' className="btn">Discover more about us</Link>
         </div>
     )
 }

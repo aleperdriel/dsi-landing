@@ -14,10 +14,6 @@ function DonationForm() {
                   <DonationBtn text="100€"/>
                   <DonationBtn text="Other"/>
                 </div>
-                {/* <div className="inline-form-row">
-                  <input type="checkbox"></input>
-                  <label>Make this a monthly donation</label>
-                </div> */}
                 <header><p>Information</p></header>
                 <div className="inline-form-row">
                     <input placeholder='First Name' required></input>
