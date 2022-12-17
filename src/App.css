@@ -33,7 +33,7 @@ h3 {
   font-weight: 600;
 }
 
-.hidden {
+.hidden, .hidden.btn{
   display: none;
 }
 .btn {
@@ -45,7 +45,11 @@ h3 {
   border-radius: 25px;
 }
 
-.intro-quiz-block .btn {
+.btn:hover {
+  cursor: pointer;
+}
+
+.intro-quiz-block .btn, .quiz-answer-modal .btn {
   background-color: var(--beige);
   color: #000;
 }
@@ -106,6 +110,7 @@ header .logo-container {
   width: 80%;
   margin: auto;
   padding: 10em;
+  position: relative;
 }
 .quiz-answers-block {
   display: grid;
@@ -120,12 +125,24 @@ header .logo-container {
 .quiz-btn-answer {
   background-color: var(--navy-blue);
   width: 80%;
-  height: 50px;
   border-radius: 25px;
   padding: 14px;
   position: relative;
   text-align: left;
   min-width: 180px;
+}
+
+.quiz-answer-modal {
+  position: absolute;
+  width: 70%;
+  background-color: var(--navy-blue);
+  padding: 4em;
+  border-radius: 15px;
+}
+
+.quiz-answer-explanation {
+  margin: 2em;
+  font-size: 1.125rem;
 }
 
 .quiz-btn-answer:hover {
@@ -179,10 +196,22 @@ header .logo-container {
   margin-left: 60px;
 }
 
+.quiz-block-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+}
+
 #socks-img {
   max-width: 600px;
   display: block;
   margin: 3em auto;
+}
+
+.end-sock {
+  width: 300px;
 }
 
 /* ------------ TIMELINE BLOCK ---------------------------------------- */
@@ -492,7 +521,7 @@ footer .socials-container li{
   color: #fff;
 }
 
-.wave-section img {
+.wave-section> img {
   width: 100%;
   margin-bottom: -1px;
 }
