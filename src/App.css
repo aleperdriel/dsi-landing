@@ -162,6 +162,15 @@ header .logo-container {
   .quiz-block {
     width: 100%;
   }
+
+  .news-highlight .highlight-text {
+    width: 100%;
+  }
+
+  .news-section .news-highlight img {
+    width: 90%;
+    margin-top: 2em;
+  }
 }
 
 @media (max-width: 700px) {
@@ -176,6 +185,10 @@ header .logo-container {
   header .logo-container {
     transform: translateY(0);
     padding: 0px 20px 10px 20px ;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 } 
 
@@ -741,6 +754,11 @@ footer .socials-container li{
   margin: 2em 0;
 }
 
+.wave-corner-bottom {
+  margin-bottom: -10px;
+  z-index: -1;
+}
+
 /* -------------- NEWS -------------------------------- */
 
 .news-highlight {
@@ -752,6 +770,9 @@ footer .socials-container li{
   margin: 5em auto 0 auto;
 }
 
+.news-highlight .btn {
+  margin-top: 2em;
+}
 .highlight-text {
   text-align: left;
   width: 50%;
@@ -823,6 +844,66 @@ footer .socials-container li{
   color: var(--light-grey);
 }
 
+/* -------------- ORGANIZATIONS  -------------------------------- */
+.org-card-container {
+  width: 80%;
+  margin: auto;
+}
+.org-card {
+  background-color: var(--orange);
+  border-radius: 8px;
+  padding: 2em;
+  width: 50%;
+  max-width: 450px;
+  position: relative;
+  margin: 8em;
+  color: #fff;
+}
+
+.org-card img {
+  position: absolute;
+  width: 30%;
+}
+.org-card #ida-logo {
+  width: 80%;
+  transform: translateX(70%) translateY(-50%)
+
+}
+
+.org-card:nth-child(odd) {
+  margin-left: 40%;
+}
+
+.org-card:nth-child(even) {
+  margin-left: 10%;
+}
+.org-card:nth-child(odd) img {
+  right: 0;
+  top: 0;
+  transform: translateX(70%) translateY(-50%)
+}
+
+.org-card:nth-child(even) img {
+  left: 0;
+  top: 0;
+  transform: translateX(-70%) translateY(-70%)
+}
+
+@media (max-width:760px) {
+  .org-card {
+    width: 100%;
+  }
+
+  .org-card:nth-child(even), .org-card:nth-child(odd) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .org-card img {
+    position: relative;
+    transform: translateX(0) translateY(0)!important;
+  }
+}
+
 /* -------------- BACK OFFICE -------------------------------- */
 
 .login {
@@ -838,7 +919,8 @@ footer .socials-container li{
   gap: 2em;
 }
 
-.login input, .create-article-container input {
+.login input, .create-article-container input, textarea {
+  font-family: 'Futura PT';
   border-radius: 5px;
   border: 1px solid var(--light-grey);
   padding: 0.5em;
@@ -852,4 +934,9 @@ footer .socials-container li{
   min-width: 300px;
   width: 30%;
   margin:5em auto;
+}
+
+#logged-in {
+  text-align: center;
+  margin-top: 2em;
 }

@@ -17,6 +17,7 @@ function App() {
       <Routes>
             <Route exact path='/' element={< Home />}></Route>
             <Route exact path='/admin/login' element={< Login />}></Route>
+            <Route exact path='/admin' element={< Login />}></Route>
             <Route exact path='/admin/create' element={< CreateArticle />}></Route>
             <Route exact path='/associations' element={< Associations />}></Route>
             <Route exact path='/donate' element={< Donation />}></Route>

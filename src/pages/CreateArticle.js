@@ -9,7 +9,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 function CreateArticle() { 
-    const [user, loading, error] = useAuthState(auth);
+    const [user, loading] = useAuthState(auth);
     const [name, setName] = useState("");
     const navigate = useNavigate();
 
@@ -47,7 +47,7 @@ function CreateArticle() {
     return(
         <>
             <Header/>
-            <div>
+            <div id="logged-in">
                 Logged in as
                 <div>{name}</div>
                 <div>{user?.email}</div>

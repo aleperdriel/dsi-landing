@@ -23,20 +23,20 @@ function About() {
                     <div className="image-triple-container">
                         <div className="image-triple image-triple-1">
                             <div className="image-triple-description">
-                                <Link to="/article" className="image-triple-description">
+                                <Link to="/article/1" className="image-triple-description">
                                     <p>What we stand for</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="image-triple image-triple-2">
-                            <Link to="/article" className="image-triple-description">
+                            <Link to="/article/1" className="image-triple-description">
                                 <p>Our approach</p>
                             </Link>
 
                         </div>
                         <div className="image-triple image-triple-3">
                             <div className="image-triple-description">
-                                <Link to="/article" className="image-triple-description">
+                                <Link to="/article/1" className="image-triple-description">
                                     <p>Who we work with</p>
                                 </Link>
                             </div>
@@ -56,20 +56,20 @@ function About() {
                         <div className="image-triple-container">
                             <div className="image-triple image-triple-1">
                                 <div className="image-triple-description">
-                                    <Link to="/article" className="image-triple-description">
+                                    <Link to="/article/1" className="image-triple-description">
                                         <p>What we stand for</p>
                                     </Link>
                                 </div>
                             </div>
                             <div className="image-triple image-triple-2">
-                                <Link to="/article" className="image-triple-description">
+                                <Link to="/article/1" className="image-triple-description">
                                     <p>Our approach</p>
                                 </Link>
 
                             </div>
                             <div className="image-triple image-triple-3">
                                 <div className="image-triple-description">
-                                    <Link to="/article" className="image-triple-description">
+                                    <Link to="/article/1" className="image-triple-description">
                                         <p>Who we work with</p>
                                     </Link>
                                 </div>
@@ -100,60 +100,60 @@ function About() {
                     <div className="image-triple-container">
                         <div className="image-triple image-report-1">
                             <div className="image-triple-description">
-                                <Link to="/article" className="image-triple-description">
+                                <Link to="/article/1" className="image-triple-description">
                                     <p>Annual report 2021-2022</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="image-triple image-report-2">
-                            <Link to="/article" className="image-triple-description">
+                            <Link to="/article/1" className="image-triple-description">
                                 <p>Annual report 2020-2021</p>
                             </Link>
 
                         </div>
                         <div className="image-triple image-report-3">
                             <div className="image-triple-description">
-                                <Link to="/article" className="image-triple-description">
+                                <Link to="/article/1" className="image-triple-description">
                                     <p>Annual report 2019-2020</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="image-triple image-report-4">
                             <div className="image-triple-description">
-                                <Link to="/article" className="image-triple-description">
+                                <Link to="/article/1" className="image-triple-description">
                                     <p>Annual report 2018-2019</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="image-triple image-report-5">
-                            <Link to="/article" className="image-triple-description">
+                            <Link to="/article/1" className="image-triple-description">
                                 <p>Annual report 2017-2018</p>
                             </Link>
 
                         </div>
                         <div className="image-triple image-report-6">
                             <div className="image-triple-description">
-                                <Link to="/article" className="image-triple-description">
+                                <Link to="/article/1" className="image-triple-description">
                                     <p>Annual report 2016-2017</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="image-triple image-report-7">
                             <div className="image-triple-description">
-                                <Link to="/article" className="image-triple-description">
+                                <Link to="/article/1" className="image-triple-description">
                                     <p>Annual report 2014-2015</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="image-triple image-report-8">
-                            <Link to="/article" className="image-triple-description">
+                            <Link to="/article/1" className="image-triple-description">
                                 <p>Annual report 2013-2014</p>
                             </Link>
 
                         </div>
                         <div className="image-triple image-report-9">
                             <div className="image-triple-description">
-                                <Link to="/article" className="image-triple-description">
+                                <Link to="/article/1" className="image-triple-description">
                                     <p>Annual report 2012-2013</p>
                                 </Link>
                             </div>

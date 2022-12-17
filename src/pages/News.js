@@ -51,17 +51,17 @@ function News() {
                     <ul className="article-list">
                         <li className="article-item">
                             <img src={ImgCurrent1} alt="article"></img>
-                            <p className="article-title"><Link to="/article">With us, not for us</Link></p>
+                            <p className="article-title"><Link to="/article/1">With us, not for us</Link></p>
                             <p className="article-content">Our global network of people with Down syndrome calls for a commitment to 'With Us Not For Us' on WDSD 2023.</p>
                         </li>
                         <li className="article-item">
                             <img src={ImgCurrent2} alt="article"></img>
-                            <p className="article-title"><Link to="/article">WINNER!! Jessica from Canada</Link></p>
+                            <p className="article-title"><Link to="/article/1">WINNER!! Jessica from Canada</Link></p>
                             <p className="article-content">Congratulations to Jessica Rotolo, the Lots Of Socks 2023 design competition winner.</p>
                         </li>
                         <li className="article-item">
                             <img src={ImgCurrent3} alt="article"></img>
-                            <p className="article-title"><Link to="/article">The first official World Down Syndrome Day in Zambia</Link></p>
+                            <p className="article-title"><Link to="/article/1">The first official World Down Syndrome Day in Zambia</Link></p>
                             <p className="article-content">For the first time in 2022, the Government of Zambia recognises World Down Syndrome Day as an official calendar day.</p>
                         </li>
                     </ul>
@@ -73,17 +73,17 @@ function News() {
                     <ul className="article-list">
                         <li className="article-item">
                             <img src={ImgPastEvent1} alt="article"></img>
-                            <p className="article-title"><Link to="/article">WDSD 2022: Inclusion Means...</Link></p>
+                            <p className="article-title"><Link to="/article/1">WDSD 2022: Inclusion Means...</Link></p>
                             <p className="article-content">For World Down Syndrome Day 2022, we asked, what does inclusion mean? Click here to learn more.</p>
                         </li>
                         <li className="article-item">
                             <img src={ImgPastEvent2} alt="article"></img>
-                            <p className="article-title"><Link to="/article">#InclusionMeans - in organisations</Link></p>
+                            <p className="article-title"><Link to="/article/1">#InclusionMeans - in organisations</Link></p>
                             <p className="article-content">Find out what we think inclusion means in organisations, and what it doesn't mean!</p>
                         </li>
                         <li className="article-item">
                             <img src={ImgPastEvent3} alt="article"></img>
-                            <p className="article-title"><Link to="/article">#InclusionMeans - in health</Link></p>
+                            <p className="article-title"><Link to="/article/1">#InclusionMeans - in health</Link></p>
                             <p className="article-content">Find out what we think inclusion means in health, and what it doesn't mean!</p>
                         </li>
                     </ul>
@@ -96,27 +96,27 @@ function News() {
                     <ul className="article-list">
                         <li className="article-item">
                             <img src={ImgCurrent1} alt="article"></img>
-                            <p className="article-title"><Link to="/article">In their own words</Link></p>
+                            <p className="article-title"><Link to="/article/1">In their own words</Link></p>
                             <p className="article-content">People with Down syndrome answer your questions about Down syndrome.</p>
                         </li>
                         <li className="article-item">
                             <img src={ImgCurrent2} alt="article"></img>
-                            <p className="article-title"><Link to="/article">Myths and facts</Link></p>
+                            <p className="article-title"><Link to="/article/1">Myths and facts</Link></p>
                             <p className="article-content">Being clear on myths associated with Down syndrome and compare them to the facts.</p>
                         </li>
                         <li className="article-item">
                             <img src={ImgCurrent3} alt="article"></img>
-                            <p className="article-title"><Link to="/article">Use of terminology</Link></p>
+                            <p className="article-title"><Link to="/article/1">Use of terminology</Link></p>
                             <p className="article-content">What to say and what not to say about Down syndrome.</p>
                         </li>
                         <li className="article-item">
                             <img src={ImgPastEvent1} alt="article"></img>
-                            <p className="article-title"><Link to="/article">WDSD 2022: Inclusion Means...</Link></p>
+                            <p className="article-title"><Link to="/article/1">WDSD 2022: Inclusion Means...</Link></p>
                             <p className="article-content">For World Down Syndrome Day 2022, we asked, what does inclusion mean? Click here to learn more.</p>
                         </li>
                         <li className="article-item">
                             <img src={ImgPastEvent2} alt="article"></img>
-                            <p className="article-title"><Link to="/article">#InclusionMeans - in organisations</Link></p>
+                            <p className="article-title"><Link to="/article/1">#InclusionMeans - in organisations</Link></p>
                             <p className="article-content">Find out what we think inclusion means in organisations, and what it doesn't mean!</p>
                         </li>
                         <li className="article-item">

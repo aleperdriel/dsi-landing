@@ -5,6 +5,7 @@ import {db} from '../firebase-config';
 import {doc, getDoc } from 'firebase/firestore'
 import { useParams } from 'react-router-dom';
 import {defaultArticle} from './defaultArticle.js';
+import WaveCornerImg from '../assets/img/wave_corner.png';
 
 function Article() {    
     const [article, setArticle] = useState("");
@@ -37,7 +38,9 @@ function Article() {
                     {article.content}
                 </p>
             </div>
+
         </div>
+
         <Footer/>
 
         </>

@@ -8,14 +8,14 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
 
     const navigate = useNavigate();
     
     if(user) navigate('/admin/create')
     return(
         <>
-        <Header></Header>
+        <Header />
         <div className="login">
             <div className="login-container">
                 <input
